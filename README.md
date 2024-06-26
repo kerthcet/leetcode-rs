@@ -1,2 +1,3 @@
-# leetcode
-LeetCode HomePage: https://leetcode-cn.com/u/shen-jing-wa-zs/
+# LeetCode-In-Rust
+
+[LeetCode](https://leetcode.cn/u/kerthcet) written in Rust 🦀️.
