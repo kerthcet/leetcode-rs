@@ -1,4 +1,4 @@
-// Queue is a FIFO queue with the max length to 255.
+// Queue is a FIFO queue with the elements type of usize.
 #[derive(Debug)]
 struct FIFO {
     // indicates the first item's index.
