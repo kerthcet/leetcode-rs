@@ -1,6 +1,7 @@
 // This is a LIFO list.
 struct SinglyLinkedList<T> {
     head: Box<Node<T>>,
+    len: usize,
 }
 
 struct Node<T> {
@@ -17,6 +18,7 @@ impl<T: Default> SinglyLinkedList<T> {
                 value: T::default(),
                 next: None,
             }),
+            len: 0,
         }
     }
 
@@ -26,10 +28,12 @@ impl<T: Default> SinglyLinkedList<T> {
             next: self.head.next.take(),
         });
         self.head.next = Some(new_node);
+        self.len += 1;
     }
 
     fn pop(&mut self) -> Option<T> {
         self.head.next.take().map(|node| {
+            self.len -= 1;
             self.head.next = node.next;
             node.value
         })
@@ -39,16 +43,22 @@ impl<T: Default> SinglyLinkedList<T> {
         self.head.next.as_ref().map(|node| &node.value )
     }
 
+    fn len(&self) -> usize {
+        self.len
+    }
+
 }
 
 fn main() {
     let mut list: SinglyLinkedList<i8> = SinglyLinkedList::new();
     let mut res = list.pop();
     assert_eq!(res, None, "It should be None");
+    assert_eq!(list.len(), 0, "length is 0");
 
     list.push(1);
     let peek_res = list.peek();
     assert_eq!(peek_res, Some(1).as_ref(), "It should be 1");
+    assert_eq!(list.len(), 1, "length is 1");
     res = list.pop();
     assert_eq!(res, Some(1), "It should be 1");
     res = list.pop();
@@ -57,12 +67,14 @@ fn main() {
     list.push(2);
     list.push(3);
     list.push(4);
+    assert_eq!(list.len(), 3, "length is 3");
     res = list.pop();
     assert_eq!(res, Some(4), "It should be 4");
     res = list.pop();
     assert_eq!(res, Some(3), "It should be 3");
     res = list.pop();
     assert_eq!(res, Some(2), "It should be 2");
+    assert_eq!(list.len(), 0, "length is 0");
 
     println!("Succeeded!")
 }

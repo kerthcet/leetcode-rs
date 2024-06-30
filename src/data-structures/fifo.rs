@@ -45,7 +45,6 @@ impl FIFO {
         self.elements[self.end] = item;
         self.end += 1;
         self.len += 1;
-
     }
 
     fn dequeue(&mut self) -> Option<usize> {
