@@ -1,12 +1,14 @@
-// This is a LIFO list.
-struct SinglyLinkedList<T> {
-    head: Box<Node<T>>,
-    len: usize,
-}
+type Link<T> = Box<Node<T>>;
 
 struct Node<T> {
     value: T,
-    next: Option<Box<Node<T>>>,
+    next: Option<Link<T>>
+}
+
+// This is a LIFO list.
+struct SinglyLinkedList<T> {
+    head: Link<T>,
+    len: usize,
 }
 
 impl<T: Default> SinglyLinkedList<T> {
