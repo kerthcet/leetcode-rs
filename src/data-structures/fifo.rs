@@ -1,6 +1,6 @@
-// Queue is a FIFO queue with the elements type of usize.
+// Queue is a FIFO queue.
 #[derive(Debug)]
-struct FIFO {
+struct FIFO<T> {
     // indicates the first item's index.
     start: usize,
     // indicates the last item's index+1.
@@ -8,25 +8,25 @@ struct FIFO {
     // indicates the items' length.
     len: usize,
     // With a default capacity of 4.
-    elements: Vec<usize>,
+    elements: Vec<T>,
 }
 
-impl FIFO {
+impl<T: Default + Copy> FIFO<T> {
 
     fn new() -> Self {
         Self {
             start: 0,
             end: 0,
             len: 0,
-            elements: vec!(0; 4),
+            elements: vec!(T::default(); 4),
         }
     }
 
-    fn enqueue(&mut self, item: usize) {
+    fn enqueue(&mut self, item: T) {
         let size = self.len;
         if size == self.elements.capacity() {
             // Scale 2x size once reach the limit of capacity.
-            let mut new_elements = vec!(0; size * 2);
+            let mut new_elements = vec!(T::default(); size * 2);
             if self.start == 0 {
                 new_elements[..size].copy_from_slice(&self.elements);
             } else {
@@ -47,12 +47,12 @@ impl FIFO {
         self.len += 1;
     }
 
-    fn dequeue(&mut self) -> Option<usize> {
+    fn dequeue(&mut self) -> Option<T> {
         if self.start == self.end {
             return None
         }
 
-        let ret = self.elements[self.start];
+        let ret: T = self.elements[self.start];
         self.start += 1;
         self.len -=1;
 
@@ -62,7 +62,7 @@ impl FIFO {
 
         // Reset the queue once queue is empty.
         if self.start == self.end {
-            self.elements = vec!(0; 4);
+            self.elements = vec!(T::default(); 4);
             self.start = 0;
             self.end = 0;
         }
@@ -85,7 +85,7 @@ impl FIFO {
 }
 
 fn main() {
-    let mut queue: FIFO = FIFO::new();
+    let mut queue: FIFO<i32> = FIFO::new();
     assert!(queue.is_empty(), "queue should be empty");
     assert_eq!(queue.len(), 0, "queue length should be 0");
     assert_eq!(queue.capacity(), 4, "queue capacity should be default 4");
