@@ -4,6 +4,8 @@
 
 ## Algorithms
 
+- [Merge Sorted Array](./src/algos/merge_sorted_array.rs)
+
 ## Data Structures
 
 - [FIFO Queue](./src/data-structures/fifo.rs)
