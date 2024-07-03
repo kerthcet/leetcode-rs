@@ -1,6 +1,6 @@
 # LeetCode-In-Rust
 
-[LeetCode](https://leetcode.cn/u/kerthcet) written in Rust 🦀️.
+[LeetCode](https://leetcode.cn/u/kerthcet) written in Rust 🦀️, including [Algorithms](#algorithms) and [Data Structures](#data-structures).
 
 ## Algorithms
 
