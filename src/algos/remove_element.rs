@@ -5,6 +5,7 @@ struct Solution;
 impl Solution {
     pub fn remove_element(nums: &mut Vec<i32>, val: i32) -> i32 {
         let mut m:i8 = 0;
+        // Watch out here we can't use usize because n could be negative.
         let mut n:i8 = nums.len() as i8 - 1;
 
         while m <= n {
@@ -14,6 +15,7 @@ impl Solution {
                     continue
                 }else{
                     nums[m as usize] = nums[n as usize];
+                    // Watch out here n should not be negative, so we use i8 instead.
                     n -= 1;
                 }
             }
