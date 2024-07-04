@@ -5,6 +5,7 @@
 ## Algorithms
 
 - Top Interview 150
+  - [Majority Element](./src/algos/mojority_element.rs)
   - [Merge Sorted Array](./src/algos/merge_sorted_array.rs)
   - [Remove Element](./src/algos/remove_element.rs)
   - [Remove Duplicates from Sorted Array](./src/algos/remove_duplicates.rs)
