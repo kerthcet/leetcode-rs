@@ -10,6 +10,7 @@
   - [Remove Element](./src/algos/remove_element.rs)
   - [Remove Duplicates from Sorted Array](./src/algos/remove_duplicates.rs)
   - [Remove Duplicates from Sorted Array II](./src/algos/remove_duplicates_2.rs)
+  - [Rotate Array](./src/algos/rotate_array.rs)
 
 ## Data Structures
 
