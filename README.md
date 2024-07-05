@@ -6,7 +6,7 @@
 
 - [Algorithms](#algorithms)
   - [Top Interview 150](#top-interview-150)
-  - [Hot 100](#hot-100)
+  - [Top 100 Liked](#top-100-liked)
 - [Data Structures](#data-structures)
   - [Queue](#queue)
   - [Linked List](#linked-list)
@@ -22,7 +22,9 @@
 - [Remove Duplicates from Sorted Array II](./src/algos/remove_duplicates_2.rs)
 - [Rotate Array](./src/algos/rotate_array.rs)
 
-### Hot 100
+### Top 100 Liked
+
+- [Two Sum](./src/algos/two_sum.rs)
 
 ## Data Structures
 
