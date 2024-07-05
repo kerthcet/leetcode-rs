@@ -24,6 +24,7 @@
 
 ### Top 100 Liked
 
+- [Group Anagrams](./src/algos/group_anagrams.rs)
 - [Two Sum](./src/algos/two_sum.rs)
 
 ## Data Structures
