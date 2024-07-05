@@ -77,6 +77,4 @@ fn main() {
     res = list.pop();
     assert_eq!(res, Some(2), "It should be 2");
     assert_eq!(list.len(), 0, "length is 0");
-
-    println!("Succeed!")
 }

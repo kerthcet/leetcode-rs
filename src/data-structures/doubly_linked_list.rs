@@ -129,6 +129,4 @@ fn main() {
     res = list.pop_back();
     assert_eq!(res, Some(3), "Value should be 3");
     assert_eq!(0, list.len(), "The length should be 0");
-
-    println!("Succeed!")
 }

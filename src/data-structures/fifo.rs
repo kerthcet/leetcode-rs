@@ -125,6 +125,4 @@ fn main() {
     assert_eq!(res, None, "value should be None");
     assert_eq!(queue.len(), 0, "queue length should be 0");
     assert_eq!(queue.capacity(), 4, "queue capacity should be default 4");
-
-    println!("Succeed!")
 }

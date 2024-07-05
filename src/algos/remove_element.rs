@@ -42,6 +42,4 @@ fn main() {
     assert_eq!(0, value3, "value3 not right");
     let vec3: Vec<i32> = vec![];
     assert_eq!(vec3, nums3[0..0], "nums3 not right");
-
-    println!("Succeed!")
 }

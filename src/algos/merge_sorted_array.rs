@@ -38,6 +38,4 @@ fn main() {
     Solution::merge(&mut nums1, m, &mut nums2, n);
     assert_eq!(vec![1,2,2,3,5,6], nums1, "nums1 not right");
     assert_eq!(vec![2,5,6], nums2, "nums2 not right");
-
-    println!("Succeed!")
 }

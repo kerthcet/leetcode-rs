@@ -27,6 +27,4 @@ impl Solution {
 fn main() {
     let nums: Vec<i32> = vec![2,2,1,1,1,2,2];
     assert_eq!(2, Solution::majority_element(nums), "value not right");
-
-    println!("Succeed!")
 }

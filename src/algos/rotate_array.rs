@@ -19,6 +19,4 @@ fn main() {
     let mut nums: Vec<i32> = vec![1,2,3,4,5,6,7];
     Solution::rotate(&mut nums, 3);
     assert_eq!(vec![5,6,7,1,2,3,4], nums, "nums is not right");
-
-    println!("Succeed!")
 }

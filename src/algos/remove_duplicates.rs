@@ -30,6 +30,4 @@ fn main() {
     let value2 = Solution::remove_duplicates(&mut nums2);
     assert_eq!(5, value2, "value2 is not right");
     assert_eq!(vec![0,1,2,3,4], nums2[..5], "nums2 is not right");
-
-    println!("Succeed!")
 }
