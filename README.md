@@ -25,6 +25,7 @@
 ### Top 100 Liked
 
 - [Group Anagrams](./src/algos/group_anagrams.rs)
+- [Longest Consecutive Sequence](./src/algos/longest_consecutive_sequence.rs)
 - [Two Sum](./src/algos/two_sum.rs)
 
 ## Data Structures
