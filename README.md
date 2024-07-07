@@ -28,6 +28,7 @@
 - [Longest Consecutive Sequence](./src/algos/longest_consecutive_sequence.rs)
 - [Move Zeros](./src/algos/move_zeros.rs)
 - [Two Sum](./src/algos/two_sum.rs)
+- [Trapping Rain Water](./src/algos/trapping_rain_water.rs)
 
 ## Data Structures
 
