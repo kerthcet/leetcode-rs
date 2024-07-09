@@ -24,6 +24,7 @@
 
 ### Top 100 Liked
 
+- [Container With Most Water](./src/algos/container_with_most_water.rs)
 - [Group Anagrams](./src/algos/group_anagrams.rs)
 - [Longest Consecutive Sequence](./src/algos/longest_consecutive_sequence.rs)
 - [Move Zeros](./src/algos/move_zeros.rs)
