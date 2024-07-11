@@ -26,6 +26,7 @@
 
 - [Container With Most Water](./src/algos/container_with_most_water.rs)
 - [Group Anagrams](./src/algos/group_anagrams.rs)
+- [Longest Substring Without Repeating Characters](./src/algos/length_of_longest_substring.rs)
 - [Longest Consecutive Sequence](./src/algos/longest_consecutive_sequence.rs)
 - [Move Zeros](./src/algos/move_zeros.rs)
 - [Three Sum](./src/algos/three_sum.rs)
