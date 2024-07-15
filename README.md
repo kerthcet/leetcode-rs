@@ -25,6 +25,7 @@
 ### Top 100 Liked
 
 - [Container With Most Water](./src/algos/container_with_most_water.rs)
+- [Find All Anagrams in a String](./src/algos/find_anagrams.rs)
 - [Group Anagrams](./src/algos/group_anagrams.rs)
 - [Longest Substring Without Repeating Characters](./src/algos/length_of_longest_substring.rs)
 - [Longest Consecutive Sequence](./src/algos/longest_consecutive_sequence.rs)
